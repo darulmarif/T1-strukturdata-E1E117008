@@ -24,7 +24,7 @@ public class T1StrukturData {
 		
         for (int i=1; i<=nilai.length; i++)
         {
-          System.out.print("Masukan Nilai ke-"+i+" = ");
+          System.out.print("Masukan Nilai praktikum-"+i+" = ");
           nilai[i-1] = inputUser.nextInt();
 		  
           if(nilai[i-1]<kecil)
@@ -37,10 +37,11 @@ public class T1StrukturData {
 
         }
         float rata=jumlah/nilai.length;
-		
-        System.out.println("Nilai terkecil = "+kecil);
-        System.out.println("Nilai terbesar = "+besar);
-        System.out.println("Nilai rata-rata = "+rata);
+	    
+	System.out.println("Nilai rata-rata praktikum = "+rata);	
+        System.out.println("Nilai praktikum terendah = "+kecil);
+        System.out.println("Nilai praktikum retinggi = "+besar);
+        
 		
         for (int i=1; i<=nilai.length; i++)
         {  
