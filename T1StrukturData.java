@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class T1StrukturData {
 
     /**
-     * @param args the command line arguments
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * @param args the command line arguments
      */
     public static void main(String[] args) {
         
@@ -30,22 +30,21 @@ public class T1StrukturData {
           if(nilai[i-1]<kecil)
               kecil=nilai[i-1];
 		  
-          if(nilai[i-1]>besar)
+          else if(nilai[i-1]>besar)
               besar=nilai[i-1];
 		  
           jumlah+=nilai[i-1];
 
         }
         float rata=jumlah/nilai.length;
-	    
-	System.out.println("Nilai rata-rata praktikum = "+rata);	
-        System.out.println("Nilai praktikum terendah = "+kecil);
-        System.out.println("Nilai praktikum retinggi = "+besar);
-        
+		
+        System.out.println("rata-rata nilai peraktikum anda adalah = "+rata);
+        System.out.println("Nilai tertinggi peraktikum anda adalah = "+besar);
+        System.out.println("Nilai terendah peraktikum anda adalah = "+kecil);
 		
         for (int i=1; i<=nilai.length; i++)
         {  
-          System.out.print(nilai[i-1]+" ");
+          System.out.print(nilai[i-1]+", ");
         }
         System.out.println(" ");
 }
